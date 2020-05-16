@@ -1,0 +1,8 @@
+def SelectionSort(l):
+    for start in range(len(l)):
+        minp=start
+        for i in range(start,len(l)):
+            if l[i]<l[minp]:
+                minp=i
+        (l[start],l[minp])=(l[minp],l[start])
+    return (l)
